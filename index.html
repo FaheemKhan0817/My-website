@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faheem Khan - Data Science Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-text">
+                <span class="letter">F</span>
+                <span class="letter">a</span>
+                <span class="letter">h</span>
+                <span class="letter">e</span>
+                <span class="letter">e</span>
+                <span class="letter">m</span>
+            </div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-glow">
+                    <span class="logo-text">Data Scientist</span>
+                    <div class="logo-particles"></div>
+                </div>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link" data-text="Home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+                <li><a href="#skills" class="nav-link" data-text="Skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-text="Projects">Projects</a></li>
+                <li><a href="#experience" class="nav-link" data-text="Experience">Experience</a></li>
+                <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-rocket"></i>
+                        <span>Available for hire</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="typing-text">Hi, I'm Faheem Khan</span>
+                        <div class="title-glow"></div>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        <span class="subtitle-line">Data Science & Machine Learning Expert</span>
+                        <div class="subtitle-glow"></div>
+                    </h2>
+                    <p class="hero-description">
+                        Transforming data into actionable insights with cutting-edge machine learning, 
+                        deep learning, MLOps solutions, Data Engineering, LLMs and Generative AI. 
+                        <span class="highlight">Passionate about driving AI innovation and solving complex business challenges.</span>
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5">0</div>
+                            <div class="stat-label">Companies</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="95">0</div>
+                            <div class="stat-label">Accuracy %</div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/faheemkhanml/" class="social-link" data-tooltip="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/FaheemKhan0817" class="social-link" data-tooltip="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@faheemailab" class="social-link" data-tooltip="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="mailto:faheemthakur23@gmail.com" class="social-link" data-tooltip="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="image-wrapper">
+                            <img src="images/Faheem Khan.jpg" alt="Profile Picture">
+                            <div class="image-border"></div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-card" data-tech="Python">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="floating-card" data-tech="ML">
+                                <i class="fas fa-brain"></i>
+                                <span>ML</span>
+                            </div>
+                            <div class="floating-card" data-tech="Data">
+                                <i class="fas fa-database"></i>
+                                <span>Data</span>
+                            </div>
+                            <div class="floating-card" data-tech="AI">
+                                <i class="fas fa-robot"></i>
+                                <span>AI</span>
+                            </div>
+                        </div>
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">About Me</div>
+                <h2 class="section-title">Data Scientist & AI Enthusiast</h2>
+                <p class="section-subtitle">Passionate about turning data into insights</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-description">
+                        <p>
+                            I'm a dedicated Data Scientist with 1.5+ years of hands-on experience
+                            in developing and deploying AI solutions. My expertise spans across predictive modeling,
+                            natural language processing, deep learning, MLOps, Data Engineering, LLMs and Generative AI.
+                        </p>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Data Analysis</h4>
+                                <p>Extracting meaningful insights from complex datasets</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>AI Solutions</h4>
+                                <p>Building intelligent systems for real-world problems</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Cloud Deployment</h4>
+                                <p>Scalable solutions on AWS, GCP platforms</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5">0</div>
+                            <div class="stat-label">Companies Worked</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="95">0</div>
+                            <div class="stat-label">Model Accuracy %</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="24">0</div>
+                            <div class="stat-label">Months Experience</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="about-image">
+                    <div class="image-card">
+                        <div class="image-frame">
+                            <img src="https://via.placeholder.com/500x400/6366f1/ffffff?text=Data+Visualization" alt="About Image">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-chart-bar"></i>
+                                    <span>Data Visualization</span>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="floating-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Technical Stack</div>
+                <h2 class="section-title">My Skills & Technologies</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="skill-category" data-category="languages">
+                        <div class="category-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="python">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="sql">
+                                <i class="fas fa-database"></i>
+                                <span>SQL</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-category="ml">
+                        <div class="category-header">
+                            <i class="fas fa-brain"></i>
+                            <h3>Machine Learning</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="tensorflow">
+                                <i class="fas fa-brain"></i>
+                                <span>TensorFlow</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="pytorch">
+                                <i class="fas fa-fire"></i>
+                                <span>PyTorch</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="sklearn">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Scikit-learn</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="llms">
+                                <i class="fas fa-robot"></i>
+                                <span>LLMs</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="langchain">
+                                <i class="fas fa-link"></i>
+                                <span>LangChain</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="rag">
+                                <i class="fas fa-microchip"></i>
+                                <span>RAG</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="82"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-category="engineering">
+                        <div class="category-header">
+                            <i class="fas fa-cogs"></i>
+                            <h3>Data Engineering</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="airflow">
+                                <i class="fas fa-wind"></i>
+                                <span>Airflow</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="78"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="kafka">
+                                <i class="fas fa-stream"></i>
+                                <span>Kafka</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="warehouse">
+                                <i class="fas fa-warehouse"></i>
+                                <span>Data Warehouse</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="etl">
+                                <i class="fas fa-exchange-alt"></i>
+                                <span>ETL Pipelines</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="88"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-category="vector">
+                        <div class="category-header">
+                            <i class="fas fa-search"></i>
+                            <h3>Vector Databases</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="faiss">
+                                <i class="fas fa-search"></i>
+                                <span>Faiss</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="pinecone">
+                                <i class="fas fa-leaf"></i>
+                                <span>Pinecone</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="82"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="chromadb">
+                                <i class="fas fa-database"></i>
+                                <span>ChromaDB</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-category="visualization">
+                        <div class="category-header">
+                            <i class="fas fa-chart-bar"></i>
+                            <h3>Data & Visualization</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="pandas">
+                                <i class="fas fa-table"></i>
+                                <span>Pandas</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="matplotlib">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Matplotlib</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="powerbi">
+                                <i class="fas fa-eye"></i>
+                                <span>Power BI</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-category="cloud">
+                        <div class="category-header">
+                            <i class="fas fa-cloud"></i>
+                            <h3>Cloud & MLOps</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="gcp">
+                                <i class="fab fa-google"></i>
+                                <span>GCP</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="aws">
+                                <i class="fab fa-aws"></i>
+                                <span>AWS</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="docker">
+                                <i class="fab fa-docker"></i>
+                                <span>Docker</span>
+                                <div class="skill-level">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Featured Work</div>
+                <h2 class="section-title">Recent Projects</h2>
+                <p class="section-subtitle">Showcasing my data science and ML expertise</p>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="llm">LLM/RAG</button>
+                <button class="filter-btn" data-filter="mlops">MLOps</button>
+                <button class="filter-btn" data-filter="data">Data Engineering</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="llm">
+                    <div class="project-image">
+                        <img src="images/chat.jpg" alt="Medical Chatbot">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="http://34.61.240.234:8080/" class="project-link" data-tooltip="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/FaheemKhan0817/Complete-Medical-Chatbot-with-LLMs-LangChain-Pinecone-Flask-GCP.git" class="project-link" data-tooltip="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Featured</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Advanced Medical Chatbot with RAG</h3>
+                        <p class="project-description">
+                            AI-powered medical chatbot using Retrieval-Augmented Generation and conversational memory. 
+                            Built with Flask, LangChain, and Google's Gemini 1.5 Flash.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">LLM</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 4.9/5</span>
+                            <span><i class="fas fa-users"></i> 500+ Users</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="mlops">
+                    <div class="project-image">
+                        <img src="images/Smart.jpg" alt="Manufacturing Prediction">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://smart-manufacturing-machines-efficiency.onrender.com/" class="project-link" data-tooltip="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/FaheemKhan0817/Smart-Manufacturing-Machines-Efficiency-Prediction.git" class="project-link" data-tooltip="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Manufacturing Efficiency Prediction</h3>
+                        <p class="project-description">
+                            Machine learning model predicting manufacturing efficiency with 92% accuracy. 
+                            Deployed using Docker, Kubernetes, and Jenkins CI/CD pipeline.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">MLOps</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Jenkins</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-chart-line"></i> 92% Accuracy</span>
+                            <span><i class="fas fa-clock"></i> Real-time</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="data">
+                    <div class="project-image">
+                        <img src="images/uber.png" alt="Uber Data Analytics">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/FaheemKhan0817/Uber-Data-Analytics-End-To-End-Data-Engineering-Project.git" class="project-link" data-tooltip="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Uber Data Analytics Pipeline</h3>
+                        <p class="project-description">
+                            End-to-end data engineering project for Uber trip data using GCP, 
+                            Mage AI, and interactive dashboards with Looker Studio.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">GCP</span>
+                            <span class="tech-tag">BigQuery</span>
+                            <span class="tech-tag">ETL</span>
+                            <span class="tech-tag">Dashboards</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-database"></i> 1M+ Records</span>
+                            <span><i class="fas fa-chart-bar"></i> Interactive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="mlops">
+                    <div class="project-image">
+                        <img src="images/food.jpg" alt="Food Delivery Prediction">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://end-to-end-mlops-food-delivery-time.onrender.com" class="project-link" data-tooltip="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/FaheemKhan0817/End-to-end-MLOps-Food-Delivery-Time-Prediction-Project.git" class="project-link" data-tooltip="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Food Delivery Time Prediction</h3>
+                        <p class="project-description">
+                            MLOps pipeline for predicting food delivery times with automated 
+                            feature engineering, experiment tracking, and AWS deployment.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">MLOps</span>
+                            <span class="tech-tag">MLflow</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">CI/CD</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-clock"></i> 15min Avg</span>
+                            <span><i class="fas fa-bullseye"></i> 89% Accuracy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="mlops">
+                    <div class="project-image">
+                        <img src="images/Hotel.jpg" alt="Hotel Reservation Prediction">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://end-to-end-mlops-project-hotel-booking.onrender.com" class="project-link" data-tooltip="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/FaheemKhan0817/End-to-end-MLOps-Project-hotel-booking-cancellation-prediction.git" class="project-link" data-tooltip="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Hotel Reservation Prediction</h3>
+                        <p class="project-description">
+                            Predicts hotel reservation cancellations using LightGBM, MySQL, MLflow, 
+                            Flask, Docker, and Jenkins for production environments.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">LightGBM</span>
+                            <span class="tech-tag">MLOps</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-percentage"></i> 87% Precision</span>
+                            <span><i class="fas fa-users"></i> 100K+ Records</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="mlops">
+                    <div class="project-image">
+                        <img src="images/Australia.png" alt="Australia Rain Prediction">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://end-to-end-mlops-for-australia-rain.onrender.com" class="project-link" data-tooltip="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://gitlab.com/faheemkhan08171/end-to-end-mlops-for-australia-rain-prediction.git" class="project-link" data-tooltip="GitLab">
+                                    <i class="fab fa-gitlab"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Australia Rain Prediction</h3>
+                        <p class="project-description">
+                            Complete MLOps pipeline for predicting rainfall using historical weather data 
+                            with XGBoost, Flask, GitLab CI/CD, and Render deployment.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">MLOps</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">GitLab CI/CD</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-cloud-rain"></i> Weather</span>
+                            <span><i class="fas fa-chart-area"></i> Time Series</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Journey</div>
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional journey in data science</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Machine Learning Engineer</h3>
+                            <div class="timeline-meta">
+                                <span class="timeline-company">Asan Innovators</span>
+                                <span class="timeline-period">Jan 2025 - Present</span>
+                            </div>
+                        </div>
+                        <p class="timeline-description">
+                            Developed and deployed end-to-end machine learning models, enhancing operational efficiency for business applications. 
+                            Led deep learning and NLP projects, including text classification and chatbot development, improving customer insights by 15%. 
+                            Designed data pipelines for seamless preprocessing and feature engineering, reducing processing time by 25%.
+                        </p>
+                        <div class="timeline-achievements">
+                            <span class="achievement">15% Customer Insights</span>
+                            <span class="achievement">25% Time Reduction</span>
+                        </div>
+                        <div class="timeline-skills">
+                            <span class="skill-badge">Deep Learning</span>
+                            <span class="skill-badge">NLP</span>
+                            <span class="skill-badge">MLflow</span>
+                            <span class="skill-badge">Data Pipelines</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Machine Learning Engineer & Data Engineering Intern</h3>
+                            <div class="timeline-meta">
+                                <span class="timeline-company">Everlytics Data Science</span>
+                                <span class="timeline-period">Mar 2024 - Sep 2024</span>
+                            </div>
+                        </div>
+                        <p class="timeline-description">
+                            Developed and implemented machine learning models to analyze and extract insights from complex datasets. 
+                            Collaborated with cross-functional teams to design and execute experiments, leveraging advanced statistical methods.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">Scikit-learn</span>
+                            <span class="skill-badge">ETL</span>
+                            <span class="skill-badge">MLOps</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Artificial Intelligence Intern</h3>
+                            <div class="timeline-meta">
+                                <span class="timeline-company">Edunet Foundation</span>
+                                <span class="timeline-period">Aug 2023 - Oct 2023</span>
+                            </div>
+                        </div>
+                        <p class="timeline-description">
+                            Focused on machine learning fundamentals, developed customer satisfaction prediction models, 
+                            and implemented reinforcement learning agents. Used NLP techniques for sentiment analysis 
+                            and received positive feedback from industry experts.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-badge">Reinforcement Learning</span>
+                            <span class="skill-badge">Sentiment Analysis</span>
+                            <span class="skill-badge">NLP</span>
+                            <span class="skill-badge">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Data Science Intern</h3>
+                            <div class="timeline-meta">
+                                <span class="timeline-company">YBI Foundation</span>
+                                <span class="timeline-period">Jun 2023 - Aug 2023</span>
+                            </div>
+                        </div>
+                        <p class="timeline-description">
+                            Mastered machine learning model deployment and handling large datasets. 
+                            Focused on efficient preprocessing, storage, and exploratory data analysis. 
+                            Explored neural network architectures for image classification, NLP, and time series forecasting.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-badge">Model Deployment</span>
+                            <span class="skill-badge">Deep Learning</span>
+                            <span class="skill-badge">Big Data</span>
+                            <span class="skill-badge">Feature Engineering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Data Science Intern</h3>
+                            <div class="timeline-meta">
+                                <span class="timeline-company">POSTULATE INFOTECH PVT LTD</span>
+                                <span class="timeline-period">Jan 2023 - Apr 2023</span>
+                            </div>
+                        </div>
+                        <p class="timeline-description">
+                            Developed a sophisticated machine learning model for fake news prediction using advanced NLP techniques. 
+                            Created a breast cancer classification model for early detection, employing rigorous data preprocessing 
+                            and feature selection.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-badge">NLP</span>
+                            <span class="skill-badge">Healthcare Analytics</span>
+                            <span class="skill-badge">TensorFlow</span>
+                            <span class="skill-badge">PyTorch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Get In Touch</div>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Ready to discuss your next data science project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>faheemthakur23@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 82795735494</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Aligarh, Uttar Pradesh, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://www.linkedin.com/in/faheemkhanml/" class="social-link" data-tooltip="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/FaheemKhan0817" class="social-link" data-tooltip="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@faheemailab" class="social-link" data-tooltip="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                            <form
+  class="contact-form"
+  id="contact-form"
+  action="https://formspree.io/f/xpwlllaj"
+  method="POST"
+>
+  <div class="form-row">
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <label>Your Name</label>
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Your Email" required>
+      <label>Your Email</label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <input type="text" name="subject" placeholder="Subject" required>
+    <label>Subject</label>
+  </div>
+
+  <div class="form-group">
+    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+    <label>Your Message</label>
+  </div>
+
+  <button type="submit" class="btn btn-primary">
+    <span>Send Message</span>
+    <i class="fas fa-paper-plane"></i>
+  </button>
+</form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Faheem Khan. All rights reserved.</p>
+                    <p>Made with <i class="fas fa-heart"></i> and Data Science</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/faheemkhanml/" class="social-link" data-tooltip="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/FaheemKhan0817" class="social-link" data-tooltip="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@faheemailab" class="social-link" data-tooltip="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="mailto:faheemthakur23@gmail.com" class="social-link" data-tooltip="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Background Particles -->
+    <div id="particles-js"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
