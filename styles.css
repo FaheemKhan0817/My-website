@@ -140,6 +140,26 @@ body {
     cursor: pointer;
 }
 
+/* Contact links styling */
+.contact-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: var(--primary-color);
+}
+
+/* About section alignment fix */
+.about-text {
+  text-align: left;
+}
+
+.about-features {
+  text-align: left;
+}
+
 /* Cursor Styles */
 .cursor {
     width: 20px;
@@ -1567,23 +1587,18 @@ section {
     }
     
     .about-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .stats-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align to left on mobile */
     }
     
     .feature-item {
-        flex-direction: column;
-        text-align: center;
-        gap: 0.8rem;
+        text-align: left; /* Keep text left-aligned on mobile */
+        width: 100%;
     }
     
-    .feature-icon {
-        margin: 0 auto;
+    .stats-grid {
+        width: 100%;
     }
     
     .skills-grid {
@@ -1746,7 +1761,7 @@ section {
     }
     
     .about-content {
-        gap: 3rem;
+        align-items: flex-start; /* Align to left on tablet */
     }
     
     .stats-grid {
