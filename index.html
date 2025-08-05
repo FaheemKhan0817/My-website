@@ -3,14 +3,13 @@
 <head>
   <!-- Basic -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
   <title>Faheem Khan – Data Scientist & AI Engineer | Portfolio and Resume</title>
   <meta name="description"
         content="Faheem Khan – Data Scientist & AI Engineer with 1.5+ years delivering end-to-end ML, LLM & MLOps solutions. Download my resume and collaborate.">
   <meta name="keywords"
         content="Faheem Khan, data scientist, machine learning engineer, AI portfolio, MLOps, LLM, Python, TensorFlow, PyTorch, resume download">
   <meta name="author" content="Faheem Khan">
-
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://faheemkhan.dev/">
@@ -18,7 +17,6 @@
   <meta property="og:description"
         content="End-to-end ML & AI solutions. View projects and download my resume.">
   <meta property="og:image" content="https://faheemkhan.dev/images/og-image.jpg">
-
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://faheemkhan.dev/">
@@ -26,13 +24,11 @@
   <meta property="twitter:description"
         content="End-to-end ML & AI solutions. View projects and download my resume.">
   <meta property="twitter:image" content="https://faheemkhan.dev/images/og-image.jpg">
-
 <!-- ===== NEW FAVICON & APP ICONS ===== -->
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
   <!-- Font Awesome -->
@@ -41,8 +37,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
-
 <body>
+  <!-- Skip to content link for keyboard users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
   <script>
@@ -51,7 +49,7 @@
     gtag('js', new Date());
     gtag('config', 'GA_MEASUREMENT_ID');
   </script>
-
+  
   <!-- Preloader (unchanged) -->
   <div class="preloader">
     <div class="preloader-content">
@@ -64,13 +62,13 @@
       </div>
     </div>
   </div>
-
+  
   <!-- Cursor (unchanged) -->
   <div class="cursor"></div>
   <div class="cursor-follower"></div>
-
-  <!-- Navigation (unchanged) -->
-  <nav class="navbar" id="navbar">
+  
+  <!-- Navigation (updated with accessibility) -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-container">
       <div class="nav-logo">
         <div class="logo-glow">
@@ -78,113 +76,112 @@
           <div class="logo-particles"></div>
         </div>
       </div>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="#home" class="nav-link" data-text="Home">Home</a></li>
-        <li><a href="#about" class="nav-link" data-text="About">About</a></li>
-        <li><a href="#skills" class="nav-link" data-text="Skills">Skills</a></li>
-        <li><a href="#projects" class="nav-link" data-text="Projects">Projects</a></li>
-        <li><a href="#experience" class="nav-link" data-text="Experience">Experience</a></li>
-        <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
-      </ul>
-      <div class="hamburger" id="hamburger">
+      <button class="hamburger" id="hamburger" 
+              aria-label="Toggle navigation menu" 
+              aria-expanded="false" 
+              aria-controls="nav-menu">
         <span></span><span></span><span></span>
-      </div>
+      </button>
+      <ul class="nav-menu" id="nav-menu" role="menu">
+        <li role="none"><a href="#home" class="nav-link" role="menuitem" data-text="Home">Home</a></li>
+        <li role="none"><a href="#about" class="nav-link" role="menuitem" data-text="About">About</a></li>
+        <li role="none"><a href="#skills" class="nav-link" role="menuitem" data-text="Skills">Skills</a></li>
+        <li role="none"><a href="#projects" class="nav-link" role="menuitem" data-text="Projects">Projects</a></li>
+        <li role="none"><a href="#experience" class="nav-link" role="menuitem" data-text="Experience">Experience</a></li>
+        <li role="none"><a href="#contact" class="nav-link" role="menuitem" data-text="Contact">Contact</a></li>
+      </ul>
     </div>
   </nav>
-
-  <!-- Hero Section (added resume CTA) -->
-  <section id="home" class="hero">
-    <div class="hero-bg">
-      <div class="gradient-orb orb-1"></div>
-      <div class="gradient-orb orb-2"></div>
-      <div class="gradient-orb orb-3"></div>
-    </div>
-    <div class="hero-container">
-      <div class="hero-content">
-        <div class="hero-text">
-          <div class="hero-badge">
-            <i class="fas fa-rocket"></i>
-            <span>Available for hire</span>
-          </div>
-          <h1 class="hero-title">
-            <span class="typing-text">Hi, I'm Faheem Khan</span>
-            <div class="title-glow"></div>
-          </h1>
-          <h2 class="hero-subtitle">
-            <span class="subtitle-line">Data Science & Machine Learning Expert</span>
-            <div class="subtitle-glow"></div>
-          </h2>
-          <p class="hero-description">
-            Transforming data into actionable insights with cutting-edge machine learning,
-            deep learning, MLOps solutions, Data Engineering, LLMs and Generative AI.
-            <span class="highlight">Passionate about driving AI innovation and solving complex business challenges.</span>
-          </p>
-
-          <!-- NEW: Resume CTA -->
-          <div class="resume-cta">
-            <a href="/assets/Faheem_Khan.pdf" class="btn btn-resume" aria-label="Download Faheem Khan Resume">
-              <i class="fas fa-download"></i>
-              <span>Download my Resume</span>
-            </a>
-          </div>
-
-          <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">
-              <span>View My Work</span>
-              <i class="fas fa-arrow-right"></i>
-            </a>
-            <a href="#contact" class="btn btn-secondary">
-              <span>Get In Touch</span>
-              <i class="fas fa-envelope"></i>
-            </a>
-          </div>
-
-          <div class="hero-stats">
-            <div class="stat-item">
-              <div class="stat-number" data-target="50">0</div>
-              <div class="stat-label">Projects</div>
+  
+  <!-- Main Content Wrapper -->
+  <main id="main-content">
+    <!-- Hero Section (added resume CTA) -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+      </div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-badge">
+              <i class="fas fa-rocket"></i>
+              <span>Available for hire</span>
             </div>
-            <div class="stat-item">
-              <div class="stat-number" data-target="5">0</div>
-              <div class="stat-label">Companies</div>
+            <h1 class="hero-title">
+              <span class="typing-text">Hi, I'm Faheem Khan</span>
+              <div class="title-glow"></div>
+            </h1>
+            <h2 class="hero-subtitle">
+              <span class="subtitle-line">Data Science & Machine Learning Expert</span>
+              <div class="subtitle-glow"></div>
+            </h2>
+            <p class="hero-description">
+              Transforming data into actionable insights with cutting-edge machine learning,
+              deep learning, MLOps solutions, Data Engineering, LLMs and Generative AI.
+              <span class="highlight">Passionate about driving AI innovation and solving complex business challenges.</span>
+            </p>
+            <!-- NEW: Resume CTA -->
+            <div class="resume-cta">
+              <a href="/assets/Faheem_Khan.pdf" class="btn btn-resume" aria-label="Download Faheem Khan Resume">
+                <i class="fas fa-download"></i>
+                <span>Download my Resume</span>
+              </a>
             </div>
-            <div class="stat-item">
-              <div class="stat-number" data-target="95">0</div>
-              <div class="stat-label">Accuracy %</div>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                <span>View My Work</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <span>Get In Touch</span>
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <div class="stat-number" data-target="50">0</div>
+                <div class="stat-label">Projects</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-target="5">0</div>
+                <div class="stat-label">Companies</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-target="95">0</div>
+                <div class="stat-label">Accuracy %</div>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/faheemkhanml/" class="social-link" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/FaheemKhan0817" class="social-link" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://www.youtube.com/@faheemailab" class="social-link" data-tooltip="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="mailto:faheemthakur23@gmail.com" class="social-link" data-tooltip="Email"><i class="fas fa-envelope"></i></a>
             </div>
           </div>
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/faheemkhanml/" class="social-link" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/FaheemKhan0817" class="social-link" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.youtube.com/@faheemailab" class="social-link" data-tooltip="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="mailto:faheemthakur23@gmail.com" class="social-link" data-tooltip="Email"><i class="fas fa-envelope"></i></a>
-          </div>
-        </div>
-
-        <div class="hero-image">
-          <div class="image-container">
-            <div class="image-wrapper">
-              <img src="images/Faheem Khan.jpg" alt="Faheem Khan - Data Scientist">
-              <div class="image-border"></div>
+          <div class="hero-image">
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img src="images/Faheem Khan.jpg" alt="Faheem Khan - Data Scientist">
+                <div class="image-border"></div>
+              </div>
+              <div class="floating-elements">
+                <div class="floating-card" data-tech="Python"><i class="fab fa-python"></i><span>Python</span></div>
+                <div class="floating-card" data-tech="ML"><i class="fas fa-brain"></i><span>ML</span></div>
+                <div class="floating-card" data-tech="Data"><i class="fas fa-database"></i><span>Data</span></div>
+                <div class="floating-card" data-tech="AI"><i class="fas fa-robot"></i><span>AI</span></div>
+              </div>
+              <div class="glow-effect"></div>
             </div>
-            <div class="floating-elements">
-              <div class="floating-card" data-tech="Python"><i class="fab fa-python"></i><span>Python</span></div>
-              <div class="floating-card" data-tech="ML"><i class="fas fa-brain"></i><span>ML</span></div>
-              <div class="floating-card" data-tech="Data"><i class="fas fa-database"></i><span>Data</span></div>
-              <div class="floating-card" data-tech="AI"><i class="fas fa-robot"></i><span>AI</span></div>
-            </div>
-            <div class="glow-effect"></div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="scroll-indicator">
-      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
-      <span>Scroll to explore</span>
-    </div>
-  </section>
-
-
+      <div class="scroll-indicator">
+        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+        <span>Scroll to explore</span>
+      </div>
+    </section>
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -251,28 +248,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="about-image">
-                    <div class="image-card">
-                        <div class="image-frame">
-                            <img src="https://via.placeholder.com/500x400/6366f1/ffffff?text=Data+Visualization" alt="About Image">
-                            <div class="image-overlay">
-                                <div class="overlay-content">
-                                    <i class="fas fa-chart-bar"></i>
-                                    <span>Data Visualization</span>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="floating-dots">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
@@ -305,7 +284,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="skill-category" data-category="ml">
                         <div class="category-header">
                             <i class="fas fa-brain"></i>
@@ -356,7 +334,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="skill-category" data-category="engineering">
                         <div class="category-header">
                             <i class="fas fa-cogs"></i>
@@ -393,7 +370,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="skill-category" data-category="vector">
                         <div class="category-header">
                             <i class="fas fa-search"></i>
@@ -423,7 +399,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="skill-category" data-category="visualization">
                         <div class="category-header">
                             <i class="fas fa-chart-bar"></i>
@@ -453,7 +428,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="skill-category" data-category="cloud">
                         <div class="category-header">
                             <i class="fas fa-cloud"></i>
@@ -487,7 +461,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
@@ -503,15 +477,15 @@
                 <button class="filter-btn" data-filter="data">Data Engineering</button>
             </div>
             <div class="projects-grid">
-                <div class="project-card" data-category="llm">
+                <div class="project-card" data-category="llm" role="article" aria-labelledby="project1-title">
                     <div class="project-image">
-                        <img src="images/chat.jpg" alt="Medical Chatbot">
+                        <img src="images/chat.jpg" alt="Medical Chatbot Interface" aria-describedby="project1-desc">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="http://34.61.240.234:8080/" class="project-link" data-tooltip="Live Demo">
+                                <a href="http://34.61.240.234:8080/" class="project-link" aria-label="View live demo of Medical Chatbot" data-tooltip="Live Demo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
-                                <a href="https://github.com/FaheemKhan0817/Complete-Medical-Chatbot-with-LLMs-LangChain-Pinecone-Flask-GCP.git" class="project-link" data-tooltip="GitHub">
+                                <a href="https://github.com/FaheemKhan0817/Complete-Medical-Chatbot-with-LLMs-LangChain-Pinecone-Flask-GCP.git" class="project-link" aria-label="View source code on GitHub" data-tooltip="GitHub">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -519,8 +493,8 @@
                         <div class="project-badge">Featured</div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Advanced Medical Chatbot with RAG</h3>
-                        <p class="project-description">
+                        <h3 class="project-title" id="project1-title">Advanced Medical Chatbot with RAG</h3>
+                        <p class="project-description" id="project1-desc">
                             AI-powered medical chatbot using Retrieval-Augmented Generation and conversational memory. 
                             Built with Flask, LangChain, and Google's Gemini 1.5 Flash.
                         </p>
@@ -536,7 +510,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card" data-category="mlops">
                     <div class="project-image">
                         <img src="images/Smart.jpg" alt="Manufacturing Prediction">
@@ -569,7 +542,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card" data-category="data">
                     <div class="project-image">
                         <img src="images/uber.png" alt="Uber Data Analytics">
@@ -599,7 +571,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card" data-category="mlops">
                     <div class="project-image">
                         <img src="images/food.jpg" alt="Food Delivery Prediction">
@@ -632,7 +603,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card" data-category="mlops">
                     <div class="project-image">
                         <img src="images/Hotel.jpg" alt="Hotel Reservation Prediction">
@@ -665,7 +635,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card" data-category="mlops">
                     <div class="project-image">
                         <img src="images/rain.jpg" alt="Australia Rain Prediction">
@@ -701,7 +670,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
@@ -740,7 +709,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-marker">
                         <i class="fas fa-chart-line"></i>
@@ -765,7 +733,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-marker">
                         <i class="fas fa-robot"></i>
@@ -791,7 +758,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-marker">
                         <i class="fas fa-database"></i>
@@ -817,7 +783,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-marker">
                         <i class="fas fa-brain"></i>
@@ -846,7 +811,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -896,73 +861,66 @@
                         </a>
                     </div>
                 </div>
-                            <form
-  class="contact-form"
-  id="contact-form"
-  action="https://formspree.io/f/xpwlllaj"
-  method="POST"
->
-  <div class="form-row">
-    <div class="form-group">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <label>Your Name</label>
-    </div>
-    <div class="form-group">
-      <input type="email" name="email" placeholder="Your Email" required>
-      <label>Your Email</label>
-    </div>
-  </div>
-
-  <div class="form-group">
-    <input type="text" name="subject" placeholder="Subject" required>
-    <label>Subject</label>
-  </div>
-
-  <div class="form-group">
-    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-    <label>Your Message</label>
-  </div>
-
-  <button type="submit" class="btn btn-primary">
-    <span>Send Message</span>
-    <i class="fas fa-paper-plane"></i>
-  </button>
-</form>
+                <form class="contact-form" id="contact-form" aria-label="Contact form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true">
+                            <label for="email">Your Email</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required aria-required="true">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="6" required aria-required="true"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" aria-label="Send message">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2025 Faheem Khan. All rights reserved.</p>
-                    <p>Made with <i class="fas fa-heart"></i> and Data Science</p>
-                </div>
-                <div class="footer-social">
-                    <a href="https://www.linkedin.com/in/faheemkhanml/" class="social-link" data-tooltip="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/FaheemKhan0817" class="social-link" data-tooltip="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@faheemailab" class="social-link" data-tooltip="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="mailto:faheemthakur23@gmail.com" class="social-link" data-tooltip="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          <p>&copy; 2025 Faheem Khan. All rights reserved.</p>
+          <p>Made with <i class="fas fa-heart"></i> and Data Science</p>
         </div>
-    </footer>
-
-    <!-- Background Particles -->
-    <div id="particles-js"></div>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="script.js"></script>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/faheemkhanml/" class="social-link" data-tooltip="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/FaheemKhan0817" class="social-link" data-tooltip="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.youtube.com/@faheemailab" class="social-link" data-tooltip="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="mailto:faheemthakur23@gmail.com" class="social-link" data-tooltip="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Background Particles -->
+  <div id="particles-js"></div>
+  
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
